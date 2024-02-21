@@ -6,6 +6,7 @@ int main() {
     b = a;
 
     cout << a << ' ' << b;
+    cout << endl;
     cout << a * b;
     return 0;
 }
