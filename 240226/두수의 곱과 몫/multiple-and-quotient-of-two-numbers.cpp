@@ -7,6 +7,6 @@ int main() {
 
     cout << a << " * " << b << " = " << a * b;
     cout << endl;
-    cout << a << " / " << b << " / " << a / b;
+    cout << a << " / " << b << " = " << a / b;
     return 0;
 }
