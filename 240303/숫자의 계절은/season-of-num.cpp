@@ -8,8 +8,8 @@ int main() {
 
     if(m < 3) cout << "Winter";
     else if(m < 6) cout << "Spring";
-    else if(m < 9) cout << "Fall";
-    else cout << "Winter";
-    
+    else if(m < 9) cout << "Summer";
+    else cout << "Fall";
+
     return 0;
 }
