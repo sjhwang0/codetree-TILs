@@ -7,8 +7,8 @@ int main() {
     cin >> a >> b >> c;
 
     if(a >= b && a >= c) max = a;
-    else if(b >= a && b >= c) max = b;
-    else max = c;
+    if(b >= a && b >= c) max = b;
+    if(c >= a && c >= b) max = c;
 
     cout << c;
     return 0;
