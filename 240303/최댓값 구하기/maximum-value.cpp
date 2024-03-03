@@ -10,6 +10,6 @@ int main() {
     if(b >= a && b >= c) max = b;
     if(c >= a && c >= b) max = c;
 
-    cout << c;
+    cout << max;
     return 0;
 }
