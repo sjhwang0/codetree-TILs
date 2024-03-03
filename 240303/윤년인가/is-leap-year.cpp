@@ -6,8 +6,8 @@ int main() {
 
     cin >> y;
 
-    if(y % 4 != 0 || y % 100 == 0 && y % 400 != 0) cout << "false";
-    else cout << "true";
+    if(y % 4 == 0 && y % 100 != 0 || y % 400 == 0) cout << "true";
+    else cout << "false";
 
     return 0;
 }
