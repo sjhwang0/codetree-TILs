@@ -3,15 +3,17 @@
 using namespace std;
 
 int main() {
-    int n, cnt = 1;
+    int n, cnt = 0;
 
     cin >> n;
 
-    for(int i = 0;i <= 100;i++){
-        if(cnt + i >= n) break;
+    for(int i = 1;i <= 100;i++){
         cnt += i;
+        if(cnt >= n){
+            cout << i;
+            break;
+        }
     }
 
-    cout << cnt;
     return 0;
 }
