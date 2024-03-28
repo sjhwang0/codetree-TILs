@@ -10,6 +10,7 @@ int main() {
         for(int j = 0;j < i + 1;j++){
             cout << cnt;
             cnt++;
+            if(cnt == 91) cnt = 'A';
         }
         cout << endl;
     }
