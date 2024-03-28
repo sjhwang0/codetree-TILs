@@ -11,6 +11,7 @@ int main() {
         for(int j = n - i;j > 0;j--){
             cout << cnt << " ";
             cnt++;
+            if(cnt > 'Z') cnt = 'A';
         }
         cout << endl;
     }
