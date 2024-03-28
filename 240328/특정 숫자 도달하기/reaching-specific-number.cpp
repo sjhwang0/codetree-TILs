@@ -14,6 +14,7 @@ int main() {
             break;
         }
         sum += a[i];
+        if(i == 9) cout << sum << " " << (double)sum / 10;
     }
     return 0;
 }
