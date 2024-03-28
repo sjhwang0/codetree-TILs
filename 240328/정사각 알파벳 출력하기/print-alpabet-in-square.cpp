@@ -5,11 +5,9 @@ int main() {
     int n;
     cin >> n;
 
-    for(int i = 1;i <= n;i++){
-        for(int j = 1;j <= n;j++){
-            cout << (char)((i - 1) + j + 64);
-        }
-        cout << endl;
+    for(int i = 0;i < n * n;i++){
+        cout << (char)(i +  65);
+        if(i % n == 0) cout << endl;
     }
     return 0;
 }
