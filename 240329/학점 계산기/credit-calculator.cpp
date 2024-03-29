@@ -13,7 +13,7 @@ int main() {
 
     cout << fixed;
     cout.precision(1);
-    avg = (double)sum / n;
+    avg = sum / n;
     cout << avg << "\n";
     
     if(avg >= 4.0) cout << "Perfect";
