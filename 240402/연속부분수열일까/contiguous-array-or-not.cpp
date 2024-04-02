@@ -1,31 +1,26 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int arr1[100], arr2[100], n1, n2, check = 1;
-    cin >> n1 >> n2;
+    int n, m;
+    cin >> n >> m;
+    vector<int> a(n);
+    vector<int> b(m);
 
-    for(int i = 0;i < n1;i++)
-        cin >> arr1[i];
-    for(int i = 0;i < n2;i++)
-        cin >> arr2[i];
+    for(int i = 0; i<n; i++) cin >> a[i];
+    for(int i = 0; i<m; i++) cin >> b[i];
 
-    bool satisfied = 1;
-    for(int i = 0;i <= n1 - n2;++i){
-        if(arr1[i] == arr2[0]) {
-            for(int j = i + 1, k = 1; k != n2; ++j, ++k) {
-                if(arr1[j] != arr2[k]) {
-                    satisfied = 0;
-                    check = 0;
-                    break;
-                }   
-            }
+    bool yes = false;
+    for(int i = 0; i<n-m+1; i++){
+        bool satisfied = true;
+        for(int j = 0; j<m; j++){
+            if(a[i+j] != b[j]) satisfied = false;
         }
-        if(check == 0)
-            break;
+        if(satisfied) yes = true;
     }
-    if(satisfied == 1) cout << "Yes";
+
+    if(yes) cout << "Yes";
     else cout << "No";
-    
+
     return 0;
 }
