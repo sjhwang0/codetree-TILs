@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr1[100], arr2[100], n1, n2;
+    int arr1[100], arr2[100], n1, n2, check = 1;
     cin >> n1 >> n2;
 
     for(int i = 0;i < n1;i++)
@@ -13,12 +13,16 @@ int main() {
     bool satisfied = 1;
     for(int i = 0;i <= n1 - n2;++i){
         if(arr1[i] == arr2[0]) {
-            satisfied = 1;
             for(int j = i + 1, k = 1; k != n2; ++j, ++k) {
-                if(arr1[j] != arr2[k]) satisfied = 0;
+                if(arr1[j] != arr2[k]) {
+                    satisfied = 0;
+                    check = 0;
+                    break;
+                }   
             }
         }
-        else satisfied = 0;
+        if(check == 0)
+            break;
     }
     if(satisfied == 1) cout << "Yes";
     else cout << "No";
