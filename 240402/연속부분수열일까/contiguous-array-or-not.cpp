@@ -16,7 +16,6 @@ int main() {
             satisfied = 1;
             for(int j = i + 1, k = 1; k != n2; ++j, ++k) {
                 if(arr1[j] != arr2[k]) satisfied = 0;
-                cout << satisfied;
             }
         }
         else satisfied = 0;
