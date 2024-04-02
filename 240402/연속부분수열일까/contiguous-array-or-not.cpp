@@ -17,6 +17,7 @@ int main() {
                 if(arr1[j] != arr2[k]) satisfied = 0;
             }
         }
+        else satisfied = 0;
     }
     if(satisfied == 1) cout << "Yes";
     else cout << "No";
