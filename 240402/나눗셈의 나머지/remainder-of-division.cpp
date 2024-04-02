@@ -10,7 +10,7 @@ int main() {
         count_arr[a % b]++;
         a /= b;
     }
-    for(int i = 0;i < 9;i++){
+    for(int i = 0;i <= 9;i++){
         sum += count_arr[i] * count_arr[i];
     }
     cout << sum;
