@@ -15,7 +15,7 @@ int main() {
             max_value2 = max_value1;
             max_value1 = arr[i];
         }
-        else if(arr[i] > max_value2 && arr[i] < max_value1){
+        else if(arr[i] >= max_value2 && arr[i] < max_value1){
             max_value2 = arr[i];
         }
     }
