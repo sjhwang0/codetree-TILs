@@ -12,7 +12,7 @@ int main() {
     for(int i = 0;i < n;i++){
         if(arr[i] > max_value1) max_value1 = arr[i];
     }
-    max_value2 = arr[0];
+    max_value2 = arr[1];
     for(int i = 0;i < n;i++){
         if(arr[i] != max_value1 && arr[i] > max_value2) max_value2 = arr[i];
     }
