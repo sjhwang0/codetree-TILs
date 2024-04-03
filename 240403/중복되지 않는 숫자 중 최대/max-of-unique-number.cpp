@@ -5,7 +5,7 @@ int main() {
     int n, arr[1000], count_value[1001], max_value = 0;
     cin >> n;
 
-    for(int i = 0;i < n;i++){
+    for(int i = 0;i < n + 1;i++){
         cin >> arr[i];
         count_value[arr[i]]++;
     }
