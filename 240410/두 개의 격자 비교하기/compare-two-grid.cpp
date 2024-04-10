@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int arr1[10][10], arr2[10][10];
-    int n, m;
+    int n, m, value;
     cin >> n >> m;
 
     for(int i = 0;i < n;i++){
@@ -17,8 +17,8 @@ int main() {
 
     for(int i = 0;i < n;i++){
         for(int j = 0;j < m;j++){
-            if(arr1[i][j] == arr2[i][j]) cout << 0 << " ";
-            else cout << 1 << " ";
+            value = arr1[i][j] == arr2[i][j] ? 0 : 1;
+            cout << value << " ";
         }
         cout << "\n";
     }
