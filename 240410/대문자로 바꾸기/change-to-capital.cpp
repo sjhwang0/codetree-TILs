@@ -11,7 +11,8 @@ int main() {
 
     for(int i = 0;i < 5;i++){
         for(int j = 0;j < 3;j++){
-            cout << (char)(arr[i][j] - 32) << " ";
+            arr[i][j] += 'A' - 'a';
+            cout << arr[i][j] << " ";
         }
         cout << "\n";
     }
