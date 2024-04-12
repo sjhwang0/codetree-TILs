@@ -23,7 +23,7 @@ int main() {
             sum += arr[i].length();
         } 
     }
-    avg = sum / cnt;
+    avg = (double)sum / cnt;
 
     cout << fixed;
     cout.precision(2);
