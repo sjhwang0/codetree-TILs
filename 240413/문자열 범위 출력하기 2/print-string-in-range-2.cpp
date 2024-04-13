@@ -10,7 +10,7 @@ int main() {
 
     int len = str.length();
     for(int i = len - 1;i >= len - n;i--){
-        cout << str[i];
+        if(i >= 0) cout << str[i];
     }
     return 0;
 }
