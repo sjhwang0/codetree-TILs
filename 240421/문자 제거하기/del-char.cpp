@@ -13,7 +13,7 @@ int main() {
         int i;
         cin >> i;
 
-        if(i > len)
+        if(i > len - 1)
             str.erase(len - 1, 1);
         else
             str.erase(i, 1);
