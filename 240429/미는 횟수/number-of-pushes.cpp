@@ -9,7 +9,7 @@ int main() {
     
     for(int i = 0;i < len;i++){
         if(s1 == s2) break;
-        s1 = s1.substr(1, len-1) + s1.substr(0, 1);
+        s1 = s1.substr(len-1, 1) + s1.substr(0, len-1);
         cnt++;
     }
     
