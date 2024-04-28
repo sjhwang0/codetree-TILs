@@ -7,7 +7,7 @@ int main() {
     cin >> s1 >> s2;
     int cnt = 0, len = s1.length();
     
-    for(int i = 0;i <= len;i++){
+    for(int i = 0;i < len;i++){
         if(s1 == s2) break;
         s1 = s1.substr(1, len-1) + s1.substr(0, 1);
         cnt++;
