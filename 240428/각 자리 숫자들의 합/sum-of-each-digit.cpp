@@ -3,8 +3,10 @@
 using namespace std;
 
 int main() {
+    int n;
+    cin >> n;
     string str;
-    cin >> str;
+    str = to_string(n);
 
     int len = str.length();
     int sum = 0;
@@ -14,6 +16,6 @@ int main() {
     }
 
     cout << sum;
-    
+
     return 0;
 }
