@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,12 +17,8 @@ int main() {
             str = str.substr(1, len-1) + str.substr(0, 1);
         else if(request == 2)
             str = str.substr(len-1, 1) + str.substr(0, len-1);
-        else{
-            string new_str;
-            for(int j = len-1;j >= 0;j--)
-                new_str += str.substr(j, 1);
-            str = new_str;
-        }
+        else
+            reverse(str.begin(), str.end());
         cout << str << "\n";
     }
     return 0;
